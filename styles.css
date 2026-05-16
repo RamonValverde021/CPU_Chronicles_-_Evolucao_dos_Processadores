@@ -800,10 +800,18 @@ section {
 .charts-grid {
     max-width: 1100px;
     margin: 0 auto;
+    display: block;
+}
+
+/*
+.charts-grid {
+    max-width: 1100px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+*/
 
 .chart-card {
     grid-column: span 2;
