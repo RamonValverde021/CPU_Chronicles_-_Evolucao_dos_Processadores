@@ -117,7 +117,7 @@ nav {
     color: var(--text-dim);
     text-decoration: none;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     transition: color 0.3s;
     cursor: none;
@@ -236,7 +236,7 @@ nav {
 .hero-badge {
     display: inline-block;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.75rem;
+    font-size: 1rem;
     letter-spacing: 4px;
     color: var(--cyan);
     border: 1px solid var(--border);
@@ -270,9 +270,9 @@ nav {
 }
 
 .hero-sub {
-    font-size: 1.1rem;
+    font-size:1.5rem;
     color: var(--text-dim);
-    max-width: 600px;
+    max-width: 680px;
     margin: 0 auto 3rem;
     line-height: 1.8;
     font-weight: 300;
@@ -293,7 +293,7 @@ nav {
     color: #000;
     font-family: 'Orbitron', monospace;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     border: none;
     border-radius: 4px;
@@ -313,7 +313,7 @@ nav {
     color: var(--cyan);
     font-family: 'Orbitron', monospace;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     border: 1px solid var(--cyan);
     border-radius: 4px;
@@ -362,7 +362,7 @@ nav {
 
 .hero-stat-num {
     font-family: 'Orbitron', monospace;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 900;
     color: var(--cyan);
     text-shadow: var(--glow-cyan);
@@ -370,7 +370,7 @@ nav {
 
 .hero-stat-label {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     color: var(--text-dim);
     letter-spacing: 2px;
     margin-top: 4px;
@@ -387,7 +387,7 @@ nav {
     gap: 8px;
     animation: bounce 2s ease-in-out infinite;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.65rem;
+    font-size: 1rem;
     color: var(--text-dim);
     letter-spacing: 2px;
 }
@@ -429,7 +429,7 @@ section {
 
 .section-label {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 1rem;
     letter-spacing: 4px;
     color: var(--cyan);
     margin-bottom: 0.75rem;
@@ -590,7 +590,7 @@ section {
 
 .card-era {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     color: var(--cyan);
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
@@ -598,20 +598,20 @@ section {
 
 .card-title {
     font-family: 'Orbitron', monospace;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 0.75rem;
 }
 
 .card-icon {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 0.75rem;
     display: block;
 }
 
 .card-desc {
-    font-size: 0.85rem;
+    font-size: 1.1rem;
     color: var(--text-dim);
     line-height: 1.7;
     margin-bottom: 1rem;
@@ -621,7 +621,7 @@ section {
     background: rgba(0, 245, 255, 0.05);
     border-left: 2px solid var(--cyan);
     padding: 8px 12px;
-    font-size: 0.78rem;
+    font-size: 0.9rem;
     color: var(--text);
     font-style: italic;
     margin-bottom: 1rem;
@@ -633,7 +633,7 @@ section {
     align-items: center;
     gap: 6px;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     letter-spacing: 1px;
     color: var(--cyan);
     background: rgba(0, 245, 255, 0.07);
@@ -694,14 +694,14 @@ section {
 }
 
 .compare-icon {
-    font-size: 1.8rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     display: block;
 }
 
 .compare-metric {
     font-family: 'Orbitron', monospace;
-    font-size: 0.85rem;
+    font-size: 1.5rem;
     color: var(--purple);
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
@@ -717,7 +717,7 @@ section {
 
 .compare-label {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: var(--text-dim);
     flex-shrink: 0;
     width: 80px;
@@ -744,7 +744,7 @@ section {
 
 .compare-val {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: var(--text);
     text-align: right;
     min-width: 80px;
