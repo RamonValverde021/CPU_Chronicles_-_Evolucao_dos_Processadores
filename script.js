@@ -131,7 +131,7 @@ const barObserver = new IntersectionObserver((entries) => {
                 const bar = document.createElement('div');
                 bar.style.cssText = `width:100%;border-radius:4px 4px 0 0;background:${color};height:0;transition:height 1s ${i * 0.1}s cubic-bezier(0.23,1,0.32,1);`;
                 const lbl = document.createElement('div');
-                lbl.style.cssText = 'font-family:Share Tech Mono,monospace;font-size:0.55rem;color:#5a7a99;text-align:center;';
+                lbl.style.cssText = 'font-family:Share Tech Mono,monospace;font-size:var(--fs-1);color:#5a7a99;text-align:center;';
                 lbl.innerHTML = label;
                 col.appendChild(bar);
                 col.appendChild(lbl);
