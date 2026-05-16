@@ -86,10 +86,12 @@ nav {
     z-index: 1000;
     padding: 0 2rem;
     height: 64px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgba(4, 6, 16, 0.85);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
 }
@@ -117,7 +119,7 @@ nav {
     color: var(--text-dim);
     text-decoration: none;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
     transition: color 0.3s;
     cursor: none;
@@ -230,13 +232,13 @@ nav {
     position: relative;
     z-index: 2;
     text-align: center;
-    max-width: 900px;
+    max-width: 100%;
 }
 
 .hero-badge {
     display: inline-block;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1rem;
+    font-size: 0.75rem;
     letter-spacing: 4px;
     color: var(--cyan);
     border: 1px solid var(--border);
@@ -270,9 +272,9 @@ nav {
 }
 
 .hero-sub {
-    font-size:1.5rem;
+    font-size: 1.1rem;
     color: var(--text-dim);
-    max-width: 680px;
+    max-width: 600px;
     margin: 0 auto 3rem;
     line-height: 1.8;
     font-weight: 300;
@@ -293,7 +295,7 @@ nav {
     color: #000;
     font-family: 'Orbitron', monospace;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     letter-spacing: 2px;
     border: none;
     border-radius: 4px;
@@ -313,7 +315,7 @@ nav {
     color: var(--cyan);
     font-family: 'Orbitron', monospace;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     letter-spacing: 2px;
     border: 1px solid var(--cyan);
     border-radius: 4px;
@@ -362,7 +364,7 @@ nav {
 
 .hero-stat-num {
     font-family: 'Orbitron', monospace;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 900;
     color: var(--cyan);
     text-shadow: var(--glow-cyan);
@@ -370,7 +372,7 @@ nav {
 
 .hero-stat-label {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1.5rem;
+    font-size: 0.7rem;
     color: var(--text-dim);
     letter-spacing: 2px;
     margin-top: 4px;
@@ -387,7 +389,7 @@ nav {
     gap: 8px;
     animation: bounce 2s ease-in-out infinite;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1rem;
+    font-size: 0.65rem;
     color: var(--text-dim);
     letter-spacing: 2px;
 }
@@ -429,7 +431,7 @@ section {
 
 .section-label {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1rem;
+    font-size: 0.7rem;
     letter-spacing: 4px;
     color: var(--cyan);
     margin-bottom: 0.75rem;
@@ -590,7 +592,7 @@ section {
 
 .card-era {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     color: var(--cyan);
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
@@ -598,20 +600,20 @@ section {
 
 .card-title {
     font-family: 'Orbitron', monospace;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 0.75rem;
 }
 
 .card-icon {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 0.75rem;
     display: block;
 }
 
 .card-desc {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     color: var(--text-dim);
     line-height: 1.7;
     margin-bottom: 1rem;
@@ -621,7 +623,7 @@ section {
     background: rgba(0, 245, 255, 0.05);
     border-left: 2px solid var(--cyan);
     padding: 8px 12px;
-    font-size: 0.9rem;
+    font-size: 0.78rem;
     color: var(--text);
     font-style: italic;
     margin-bottom: 1rem;
@@ -633,7 +635,7 @@ section {
     align-items: center;
     gap: 6px;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     letter-spacing: 1px;
     color: var(--cyan);
     background: rgba(0, 245, 255, 0.07);
@@ -694,14 +696,14 @@ section {
 }
 
 .compare-icon {
-    font-size: 3.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     display: block;
 }
 
 .compare-metric {
     font-family: 'Orbitron', monospace;
-    font-size: 1.5rem;
+    font-size: 0.85rem;
     color: var(--purple);
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
@@ -717,7 +719,7 @@ section {
 
 .compare-label {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: var(--text-dim);
     flex-shrink: 0;
     width: 80px;
@@ -744,7 +746,7 @@ section {
 
 .compare-val {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: var(--text);
     text-align: right;
     min-width: 80px;
@@ -764,11 +766,10 @@ section {
 }
 
 .charts-grid {
-    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: block;
+    padding: 1rem 0;
 }
 
 .chart-card {
@@ -776,6 +777,7 @@ section {
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 2rem;
+    margin: 2rem 2rem;
     opacity: 0;
     transition: opacity 0.6s;
 }
@@ -817,6 +819,8 @@ section {
     position: relative;
     height: 0;
     transition: height 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+
+    background-color: blue;
 }
 
 .bar-label {
