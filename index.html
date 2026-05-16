@@ -247,7 +247,7 @@
           </div>
           <span class="compare-val">4 cm²</span>
         </div>
-        <p style="font-size:0.75rem;color:var(--text-dim);margin-top:1rem;font-style:italic;">Redução de mais de 4
+        <p class="p-comparisons">Redução de mais de 4
           milhões de vezes no tamanho.</p>
       </div>
 
@@ -272,7 +272,7 @@
           </div>
           <span class="compare-val">6 GHz</span>
         </div>
-        <p style="font-size:0.75rem;color:var(--text-dim);margin-top:1rem;font-style:italic;">60.000x mais rápido em
+        <p class="p-comparisons">60.000x mais rápido em
           frequência de clock.</p>
       </div>
 
@@ -297,7 +297,7 @@
           </div>
           <span class="compare-val">20 W</span>
         </div>
-        <p style="font-size:0.75rem;color:var(--text-dim);margin-top:1rem;font-style:italic;">7.500x mais eficiente em
+        <p class="p-comparisons">7.500x mais eficiente em
           energia.</p>
       </div>
 
@@ -322,20 +322,18 @@
           </div>
           <span class="compare-val">92 bilhões</span>
         </div>
-        <p style="font-size:0.75rem;color:var(--text-dim);margin-top:1rem;font-style:italic;">40 milhões de vezes mais
+        <p class="p-comparisons">40 milhões de vezes mais
           transistores em 53 anos.</p>
       </div>
 
-      <div class="compare-card" style="grid-column: span 1;">
+      <div class="compare-card">
         <span class="compare-icon">💻</span>
         <div class="compare-metric">APLICAÇÕES</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:0.5rem;">
+        <div class="compare-aplications-info">
           <div>
-            <div
-              style="font-family:'Share Tech Mono',monospace;font-size:0.65rem;color:#ff6666;letter-spacing:2px;margin-bottom:8px;">
+            <div class="compare-aplications-title">
               VÁLVULAS / 1ª GER.</div>
-            <ul
-              style="font-size:0.78rem;color:var(--text-dim);list-style:none;display:flex;flex-direction:column;gap:6px;">
+            <ul class="compare-aplications-ul">
               <li>▸ Cálculos balísticos militares</li>
               <li>▸ Tabelas de artilharia</li>
               <li>▸ Criptoanálise</li>
@@ -343,11 +341,9 @@
             </ul>
           </div>
           <div>
-            <div
-              style="font-family:'Share Tech Mono',monospace;font-size:0.65rem;color:var(--cyan);letter-spacing:2px;margin-bottom:8px;">
+            <div class="compare-aplications-title">
               CHIPS MODERNOS</div>
-            <ul
-              style="font-size:0.78rem;color:var(--text-dim);list-style:none;display:flex;flex-direction:column;gap:6px;">
+            <ul class="compare-aplications-ul">
               <li>▸ Inteligência Artificial</li>
               <li>▸ Realidade virtual/aumentada</li>
               <li>▸ Veículos autônomos</li>
@@ -378,8 +374,7 @@
           </div>
           <span class="compare-val">~$0</span>
         </div>
-        <p style="font-size:0.75rem;color:var(--text-dim);margin-top:1rem;font-style:italic;">O custo computacional caiu
-          trilhões de vezes.</p>
+        <p class="p-comparisons">O custo computacional caiu trilhões de vezes.</p>
       </div>
 
     </div>
@@ -397,64 +392,45 @@
     <div class="charts-grid">
       <div class="chart-card">
         <div class="chart-title">▸ TRANSISTORES POR CHIP (BILHÕES)</div>
-        <div class="bar-chart" id="transistorChart"
-          style="display:flex;align-items:flex-end;gap:8px;height:160px;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">
-          <div class="bar-col"
-            style="display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;flex:1;height:100px;">
-            <div class="bar-visual" data-height="2"
-              style="background:linear-gradient(to top,#ff4444,#ff8800);width:100%;border-radius:4px 4px 0 0;height:0;transition:height 1s cubic-bezier(0.23,1,0.32,1)">
+        <div class="bar-chart" id="transistorChart">
+          <div class="bar-col">
+            <div id="bar-visual-1" class="bar-visual" data-height="2">
             </div>
-            <div class="bar-label"
-              style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#5a7a99;text-align:center;">
+            <div class="bar-label">
               1971<br>4004</div>
           </div>
-          <div class="bar-col"
-            style="display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;flex:1;height:100px;">
-            <div class="bar-visual" data-height="5"
-              style="background:linear-gradient(to top,#ff8800,#ffcc00);width:100%;border-radius:4px 4px 0 0;height:0;transition:height 1s cubic-bezier(0.23,1,0.32,1)">
+          <div class="bar-col">
+            <div id="bar-visual-2" class="bar-visual" data-height="5">
             </div>
-            <div class="bar-label"
-              style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#5a7a99;text-align:center;">
+            <div class="bar-label">
               1989<br>486</div>
           </div>
-          <div class="bar-col"
-            style="display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;flex:1;height:100px;">
-            <div class="bar-visual" data-height="10"
-              style="background:linear-gradient(to top,#ffcc00,#88ff00);width:100%;border-radius:4px 4px 0 0;height:0;transition:height 1s cubic-bezier(0.23,1,0.32,1)">
+          <div class="bar-col">
+            <div id="bar-visual-3" class="bar-visual" data-height="10">
             </div>
-            <div class="bar-label"
-              style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#5a7a99;text-align:center;">
+            <div class="bar-label">
               2000<br>P4</div>
           </div>
-          <div class="bar-col"
-            style="display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;flex:1;height:100px;">
-            <div class="bar-visual" data-height="20"
-              style="background:linear-gradient(to top,#88ff00,#00ffaa);width:100%;border-radius:4px 4px 0 0;height:0;transition:height 1s cubic-bezier(0.23,1,0.32,1)">
+          <div class="bar-col">
+            <div id="bar-visual-4" class="bar-visual" data-height="20">
             </div>
-            <div class="bar-label"
-              style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#5a7a99;text-align:center;">
+            <div class="bar-label">
               2010<br>i7</div>
           </div>
-          <div class="bar-col"
-            style="display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;flex:1;height:100px;">
-            <div class="bar-visual" data-height="50"
-              style="background:linear-gradient(to top,#00ffaa,#00f5ff);width:100%;border-radius:4px 4px 0 0;height:0;transition:height 1s cubic-bezier(0.23,1,0.32,1)">
+          <div class="bar-col">
+            <div id="bar-visual-5" class="bar-visual" data-height="50">
             </div>
-            <div class="bar-label"
-              style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#5a7a99;text-align:center;">
+            <div class="bar-label">
               2020<br>M1</div>
           </div>
-          <div class="bar-col"
-            style="display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;flex:1;height:100px;">
-            <div class="bar-visual" data-height="100"
-              style="background:linear-gradient(to top,var(--cyan),var(--purple));width:100%;border-radius:4px 4px 0 0;height:0;transition:height 1s cubic-bezier(0.23,1,0.32,1)">
+          <div class="bar-col">
+            <div id="bar-visual-6" class="bar-visual" data-height="100">
             </div>
-            <div class="bar-label"
-              style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#5a7a99;text-align:center;">
+            <div class="bar-label">
               2024<br>M4U</div>
           </div>
         </div>
-        <p style="font-size:0.72rem;color:var(--text-dim);margin-top:1rem;font-family:'Share Tech Mono',monospace;">*
+        <p class="p-charts">*
           Crescimento de ~40.000.000x em 53 anos</p>
       </div>
 
@@ -484,9 +460,8 @@
           <text x="278" y="185" fill="#5a7a99" font-size="7" font-family="Share Tech Mono">15</text>
           <text x="338" y="185" fill="#5a7a99" font-size="7" font-family="Share Tech Mono">24</text>
           <!-- Data line -->
-          <polyline id="mooresLine" points="40,168 100,145 160,120 220,90 280,58 350,28" fill="none"
-            stroke="url(#lineGrad)" stroke-width="2.5" stroke-dasharray="600" stroke-dashoffset="600"
-            style="transition: stroke-dashoffset 2s ease" />
+          <polyline id="mooresLine" class="mooresLine" points="40,168 100,145 160,120 220,90 280,58 350,28" fill="none"
+            stroke="url(#lineGrad)" stroke-width="2.5" stroke-dasharray="600" stroke-dashoffset="600"/>
           <!-- Dots -->
           <circle cx="40" cy="168" r="4" fill="#ff4444" />
           <circle cx="100" cy="145" r="4" fill="#ff8800" />
@@ -500,30 +475,29 @@
         </svg>
       </div>
 
-      <div class="chart-card" style="grid-column: span 2;">
+      <div class="chart-card">
         <div class="chart-title">▸ TAMANHO DO NÓ DE PROCESSO (NANÔMETROS)</div>
-        <div style="width: 100%; overflow-x: auto; padding-bottom: 0.5rem;">
-          <div
-            style="display:flex;align-items:flex-end;gap:8px;height:120px;padding-bottom:0.5rem;border-bottom:1px solid var(--border);min-width: 500px;">
-            <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;" class="node-bar-col"
+        <div class="bar-chart-2">
+          <div class="bar-chart-3">
+            <div class="node-bar-col"
               data-h="100" data-label="1970<br>10µm" data-color="#ff4444"></div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;" class="node-bar-col"
+            <div class="node-bar-col"
               data-h="80" data-label="1980<br>1µm" data-color="#ff6633"></div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;" class="node-bar-col"
+            <div class="node-bar-col"
               data-h="60" data-label="1990<br>500nm" data-color="#ff9900"></div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;" class="node-bar-col"
+            <div class="node-bar-col"
               data-h="45" data-label="2000<br>130nm" data-color="#ffcc00"></div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;" class="node-bar-col"
+            <div class="node-bar-col"
               data-h="32" data-label="2010<br>32nm" data-color="#aaff00"></div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;" class="node-bar-col"
+            <div class="node-bar-col"
               data-h="20" data-label="2016<br>7nm" data-color="#00ffaa"></div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;" class="node-bar-col"
+            <div class="node-bar-col"
               data-h="10" data-label="2020<br>5nm" data-color="#00f5ff"></div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;" class="node-bar-col"
+            <div class="node-bar-col"
               data-h="4" data-label="2024<br>2nm" data-color="#b44fff"></div>
           </div>
         </div>
-        <p style="font-size:0.72rem;color:var(--text-dim);margin-top:0.75rem;font-family:'Share Tech Mono',monospace;">*
+        <p class="p-charts">*
           Redução de 5.000x no tamanho do transistor em 54 anos | Barras invertidas: maior = maior nó (pior)</p>
       </div>
     </div>
