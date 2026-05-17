@@ -84,12 +84,12 @@ window.addEventListener('resize', () => {
 });
 
 // ====== HERO COUNTER ======
-function animateCounter(el, target, suffix = '', duration = 2000) {
+function animateCounter(el, startVal, targetVal, suffix = '', duration = 2000) {
     let start = null;
     function step(ts) {
         if (!start) start = ts;
         const p = Math.min((ts - start) / duration, 1);
-        const v = Math.floor(p * target);
+        const v = Math.floor(startVal + p * (targetVal - startVal));
         el.textContent = v + (suffix || '');
         if (p < 1) requestAnimationFrame(step);
     }
@@ -98,7 +98,9 @@ function animateCounter(el, target, suffix = '', duration = 2000) {
 
 document.querySelectorAll('[data-target]').forEach(el => {
     setTimeout(() => {
-        animateCounter(el, parseInt(el.dataset.target), el.dataset.suffix || '');
+        const startVal = parseInt(el.dataset.start) || 0;
+        const targetVal = parseInt(el.dataset.target);
+        animateCounter(el, startVal, targetVal, el.dataset.suffix || '');
     }, 600);
 });
 

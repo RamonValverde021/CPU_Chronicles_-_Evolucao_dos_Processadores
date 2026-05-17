@@ -41,9 +41,10 @@ Como é um projeto puramente Front-end sem frameworks ou processos de build comp
    ```
 3. Dê um duplo clique no arquivo `index.html` para abri-lo em seu navegador de preferência, ou utilize a extensão **Live Server** no VSCode para uma experiência de desenvolvimento em tempo real.
 
-## 📸 Telas do Projeto
+<!-- ## 📸 Telas do Projeto
 
 *(Dica: Adicione aqui algumas screenshots ou um GIF animado demonstrando as animações do site e o modal aberto!)*
+-->
 
 ---
 

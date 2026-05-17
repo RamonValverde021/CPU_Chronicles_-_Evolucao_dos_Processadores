@@ -16,7 +16,7 @@
 
     /* Variáveis de Texto - Mobile e Padrão (Valores Atuais) */
     --fs-1: 0.55rem;
-    --fs-2: 0.65rem;
+    --fs-2: 0.65rem; 
     --fs-3: 0.7rem;
     --fs-4: 0.72rem;
     --fs-5: 0.75rem;
@@ -37,21 +37,23 @@
 /* Tipografia - Monitores/Desktops (Aumento gradativo de tamanho) */
 @media (min-width: 1024px) {
     :root {
-        --fs-1: 0.65rem;
-        --fs-2: 0.75rem;
-        --fs-3: 0.8rem;
-        --fs-4: 0.82rem;
-        --fs-5: 0.85rem;
-        --fs-6: 0.88rem;
-        --fs-7: 0.9rem;
-        --fs-8: 0.95rem;
-        --fs-9: 1rem;
-        --fs-10: 1.15rem;
-        --fs-11: 1.25rem;
-        --fs-12: 1.35rem;
-        --fs-13: 1.7rem;
-        --fs-14: 2.1rem;
-        --fs-15: 2.8rem;
+        /*aumento de 0.3*/
+        --fs-0: 0.5rem;
+        --fs-1: 0.95rem; /*card-curiosity*/
+        --fs-2: 1.05rem; 
+        --fs-3: 1.1rem; /*p-comparisons; compare-aplications-ul*/
+        --fs-4: 1.12rem; /*future-desc; card-desc*/
+        --fs-5: 1.15rem; /*hero-badge; section-desc*/
+        --fs-6: 1.18rem;
+        --fs-7: 1.2rem;
+        --fs-8: 1.25rem;
+        --fs-9: 1.3rem; /*hero-sub*/
+        --fs-10: 1.45rem;
+        --fs-11: 1.55rem; 
+        --fs-12: 1.65rem;
+        --fs-13: 2.0rem;
+        --fs-14: 2.4rem;
+        --fs-15: 3.1rem;
     }
 }
 
@@ -287,6 +289,7 @@ nav {
     margin-bottom: 2rem;
     background: rgba(0, 245, 255, 0.05);
     animation: fadeDown 0.8s ease both;
+    margin-top: 1rem;
 }
 
 .hero-title {
@@ -312,7 +315,7 @@ nav {
 }
 
 .hero-sub {
-    font-size: var(--fs-11);
+    font-size: var(--fs-9);
     color: var(--text-dim);
     max-width: 600px;
     margin: 0 auto 3rem;
@@ -496,6 +499,7 @@ section {
     line-height: 1.8;
     font-weight: 300;
     margin-bottom: 4rem;
+    font-size: var(--fs-5);
 }
 
 .section-header {
@@ -653,7 +657,7 @@ section {
 }
 
 .card-desc {
-    font-size: var(--fs-8);
+    font-size: var(--fs-5);
     color: var(--text-dim);
     line-height: 1.7;
     margin-bottom: 1rem;
@@ -663,7 +667,7 @@ section {
     background: rgba(0, 245, 255, 0.05);
     border-left: 2px solid var(--cyan);
     padding: 8px 12px;
-    font-size: var(--fs-6);
+    font-size: var(--fs-1);
     color: var(--text);
     font-style: italic;
     margin-bottom: 1rem;
@@ -766,7 +770,7 @@ section {
 }
 
 .compare-aplications-ul {
-    font-size: var(--fs-6);
+    font-size: var(--fs-3);
     color: var(--text-dim);
     list-style: none;
     display: flex;
@@ -826,7 +830,7 @@ section {
 }
 
 .p-comparisons {
-    font-size: var(--fs-5);
+    font-size: var(--fs-3);
     color: var(--text-dim);
     margin-top: 1rem;
     font-style: italic;
@@ -1032,7 +1036,7 @@ section {
 }
 
 .future-desc {
-    font-size: var(--fs-8);
+    font-size: var(--fs-4);
     color: var(--text-dim);
     line-height: 1.7;
 }
